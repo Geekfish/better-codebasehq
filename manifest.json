@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Better CodebaseHQ",
+  "description": "Utilities for making use of CodebaseHQ a little bit easier. Icon: Eye by Kid A from the Noun Project,",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "54.0a1"
+    }
+  },
+  "icons": {
+    "48": "icons/eye-48.png",
+    "96": "icons/eye-96.png"
+  },
+  "permissions": ["storage", "activeTab"],
+  "browser_action": {
+      "matches": ["*://*.codebasehq.com/*"],
+      "default_icon": "icons/eye-96.png",
+      "default_popup": "utils/popup.html"
+    }
+}
