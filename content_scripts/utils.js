@@ -4,10 +4,10 @@
     * If this content script is injected into the same page again,
     * it will do nothing next time.
     */
-    if (window.cbUtilshasRun) {
+    if (window.cbUtilsHasRun) {
         return;
     }
-    window.cbUtilshasRun = true;
+    window.cbUtilsHasRun = true;
 
     function hideMiniEvents() {
         let miniEvents = document.getElementsByClassName('ThreadChanges');
